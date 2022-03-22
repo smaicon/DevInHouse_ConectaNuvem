@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: aqua;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(18, 48, 150);
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: aliceblue;
+  color: black;
+}
+.column {
+  padding: 10 px;
+  float: left;
+}
+
+.column.side,
+p,
+h2  {
+  text-align: center;
+}
+
+.column a:hover h2 {
+  text-align: center;
+}
+
+.column.side {
+  width: 25%;
+}
+.column.middle {
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}
+
+aula de sexta 1 h 01 min

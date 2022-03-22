@@ -1,0 +1,48 @@
+body * {
+  border-width: 3px;
+  border-style: solid;
+  border-color: red;
+  background-color: green;
+  font-family: sans-serif;
+}
+/* quando usa * aplica ao doc completo*/
+/* padding da espaco entre a borda e o conteudo */
+body {
+  background-color: green;
+}
+p,
+h1 {
+  background-color: orange;
+}
+.texto-especial {
+  font-size: 54;
+  color: aqua;
+}
+div * {
+  width: 50%;
+  font-weight: 100;
+  text-decoration: underline;
+  background-color: rgb(255, 0, 200);
+}
+
+div p {
+  background-color: azure;
+}
+
+ul,
+li {
+  background-color: azure;
+  font-size: 20;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+span {
+  font-size: 2em;
+}
+div {
+  border: 10px, green, solid;
+}
+p {
+  margin: 0;
+  background-color: white;
+}
