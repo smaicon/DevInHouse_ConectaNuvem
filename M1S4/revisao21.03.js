@@ -36,3 +36,22 @@ const pessoa = new Pessoa("Juliana", 26, "74464545");
 
 console.log(pessoa);
 console.log(pessoa.rg);
+
+//ver parte 21:45
+
+class Template {
+  constructor(id, html) {
+    this.elem = document.getElementById(id);
+    this.html = html;
+  }
+  modelo(conteudo) {
+    return `<span style="color:red">${conteudo}</span>`;
+  }
+  atualiza() {
+    this.elem.innerHTML = this.modelo(this.html);
+  }
+}
+
+const div = new Template("teste", "oi");
+console.log(div);
+div.atualiza();

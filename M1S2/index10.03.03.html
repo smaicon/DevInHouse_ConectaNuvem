@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Simples </title>
+  </head>
+  <body>
+    <div id="area" name="area">
+      <h2>Calculando Valores</h2>
+      <input type="number" name="txtn1" id="txtn1" placeholder="Digite valor">
+      <input type="number" name="txtn2" id="txtn2" placeholder="Digite valor">
+      <label for="operacao">Selecione a operacao </label>
+      <select name="operacao" id="operacao">
+        <option value="adicao">Adicao</option>
+        <option value="subtracao">Subtração</option>
+        <option value="multiplicacao">multiplicacao</option>
+        <option value="divisao">divisao</option>
+      </select>
+      <input name="calcular" type="button" value="calcular" onclick="calcular()">
+      
+      <div id="resultado" name="resultado">Resultado</div>
+
+    </div>
+  <footer>
+    <script src="script3.js"></script>
+  </footer>
+</html>
