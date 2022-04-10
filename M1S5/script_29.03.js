@@ -63,20 +63,10 @@ apresentaP(objUm);
 const {
   nome,
   itens: [a, b],
-} = complex;*/
-const complex = {
-  nome: "Juliana",
-  itens: { key: "chave" },
-};
-
-// destruct do desctruct (inception)
-const {
-  nome = "Marta",
-  itens: { key },
 } = complex;
 
 console.log(nome, a, b);
-
+*/
 //const complex = {
 const complex1 = {
   nome: "Juliana",

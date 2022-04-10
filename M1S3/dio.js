@@ -9,4 +9,8 @@ if (firstName === "João") {
 console.log(firstName, lastName);
 
 const FIRS_NAME = "pEDRO";
-    
+
+// JSON.parse(texto) |  JSON.stringify(objetos) transforma objeto em json
+
+console.log(carro);
+console.log(JSON.stringify(carro));
