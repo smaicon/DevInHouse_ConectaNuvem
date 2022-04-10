@@ -5,12 +5,12 @@ var carro = {
   marca: "Toyota",
 };
 
-var carrrJSON = JSON.stringify(carro);
+//var carrrJSON = JSON.stringify(carro);
 
-console.log(carro);
-console.log(carrrJSON);
+//console.log(carro);
+//console.log(carrrJSON);
 
-localStorage.setItem("carro", carrrJSON);
+//localStorage.setItem("carro", carrrJSON);
 
 var cJson = localStorage.getItem("carro");
 
@@ -19,11 +19,23 @@ var ano = 1999;
 var mes = 11;
 var dia = 08;
 
+//console.log(ano, mes, dia);
+
 console.log("LOG_1", {
   ano,
   mes,
   dia,
 });
+
+//review
+
+/*
+
+escopo global disponivel para toda aplicacao
+escopo de funcao - disponivel apenas dentro da funcao que foi criada
+escopo de bloco - disponivel dentro dos blocos
+ex de blocos if, else,for,while, switch
+*/
 
 // escopo global
 
@@ -54,7 +66,7 @@ definirLargura();
 
 console.log(largura);
 
-var vaz 
+
 */
 //escopo de bloco let e const nao vazam do escopo de bloco
 //se deixar var pega a ultima info sedeixar o const nao altera fica o primeiro numero com var
@@ -90,3 +102,11 @@ function mostraOi() {
 window.nomeDaVar = "bla";
 
 console.log(nomeDaVar);
+
+function definirLargura() {
+  var largura = 180;
+  console.log(largura);
+}
+definirLargura();
+
+console.log(largura);
