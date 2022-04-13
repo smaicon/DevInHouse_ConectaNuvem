@@ -51,6 +51,7 @@ class Produto {
     this.arrayProdutos.push(produto);
     this.id++;
   }
+
   lerDados() {
     let produto = {};
     produto.id = this.id;
@@ -95,3 +96,4 @@ class Produto {
 }
 
 var produto = new Produto();
+//implementar funão editar

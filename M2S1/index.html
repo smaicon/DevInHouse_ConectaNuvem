@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    ​
+    <div id="app">
+      <div>
+        <h1 class="texto">Primeiro Contato com Vue JS!</h1>
+      </div>
+      <div class="main">
+        <div>
+          <p class="texto">Digite seu nome:</p>
+          <input id="cx_texto_nome" type="text" v-model="nomeAluno" />
+        </div>
+        <div v-if="nomeAluno">
+          <p class="texto">{{ nomeAluno }}, Bem vindo(a) ao mundo VueJS!</p>
+        </div>
+      </div>
+    </div>
+    ​ ​
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            nomeAluno: null,
+          };
+        },
+      }).mount("#app");
+    </script>
+    ​
+    <style>
+      body {
+        background-color: #11a5c2;
+      }
+      #app {
+        position: absolute;
+        left: 35%;
+      }
+      .main {
+        margin-top: 50%;
+        margin-left: 20%;
+      }
+      .texto {
+        color: #ffffff;
+      }
+      #cx_texto_nome {
+        width: 300px;
+        border-radius: 8%;
+      }
+    </style>
+  </body>
+</html>
