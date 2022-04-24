@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div>
+        <h1 class="texto">Formulario</h1>
+      </div>
+      <div class="main">
+        <div class="tudo">
+            <p class="textoP"> </p>
+            <input type="text" id="cxTxtNome" v-model="nomeAluno" class="inputNome" v-bind:placeholder="placeholderInput" >
+            <input type="text" id="cxTxtNome" v-model="cidadeAluno" class="inputCidade" placeholder="insira sua cidade">
+            <input type="number" id="cxTxtNome" v-model="idadeAluno" class="inputNumber" placeholder="insira sua idade">
+            <p class="dataHoje">{{data}} 22/04/22</p>
+        </div>
+        <div v-if="nomeAluno">
+            <p class="textoP">{{nomeAluno}}, bem vindo ao mundo vue Js</p>
+        </div>
+        <div v-if ="cidadeAluno">
+            <p> {{nomeAluno}} é de : {{cidadeAluno}} </p>
+        </div>
+        <div v-if = "idadeAluno >= 18" >
+            <p>{{idadeAluno}} é maior de idade</p>
+        </div>
+        <div v-else ="idadeAluno < =17">
+            <p>  {{nomeAluno}} é menor de idade</p>
+        </div>
+      </div>
+    
+  </body>
+  <script>
+      Vue.createApp({
+      data(){
+        return{
+            ome: null,
+                    nomeAluno: null,
+                    cidadeAluno: null,
+                    idadeAluno: null,
+                    data: null,
+                    placeHolderInput : 'Insira seu nome'
+        }
+},
+      }).mount('#app')
+
+
+
+
+  </script>
+  </div>
+</html>
