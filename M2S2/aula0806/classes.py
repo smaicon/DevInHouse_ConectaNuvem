@@ -9,5 +9,5 @@ class Cachorro:
 c1 = Cachorro ("Buzzy")
 
 c1.setCor('preto')
-print(c1.nome)
+print("A nome é " + c1.nome)
 print(c1.cor)

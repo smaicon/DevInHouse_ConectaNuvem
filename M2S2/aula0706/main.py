@@ -18,14 +18,11 @@ num2 = int(input('Informe o segundo numero' (1):))
 
 if operacao == 1:
  print(somar(num1, num2))
-elif:
-    operacao == 2:
- print(subtrair(num1, num2))
- elif:
-    operacao == 3:
- print(subtrair(num1, num2))
- elif:
-    operacao == 4:
- print(subtrair(num1, num2))
+elif:operacao == 2:
+    print(subtrair(num1, num2))
+ elif:operacao == 3:
+    print(mult(num1, num2))
+ elif:operacao == 4:
+    print(div(num1, num2))
 else: 
-print('operação invalida')
+    print('operação invalida')
