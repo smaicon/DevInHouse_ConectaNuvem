@@ -2,18 +2,18 @@ class Tamagochi():
     def __init__(self) -> None:
         self.interacoes = 0
         self.fome = 3
-        
+
     def deuComida(self):
         self.interacoes = 0
         self.fome = 0.5
         self.morto = False
         self.saude = 3
-        
+
     def estaMorrendo(self) -> None:
-        if self.fome => 3.5 and self.saude <= 1.5 :
+        if self.fome = > 3.5 and self.saude <= 1.5:
             print("esta morrendo")
             print(f'mais {3-self.interacoes} e ele vai morrer')
-    
+
     operacao = int(input(f"""
                          
              ############ Tamagochi ########
@@ -22,12 +22,11 @@ class Tamagochi():
              2 - Desligar            
              ###############################               
                          """))
-    
-    
+
     interacoes = 0
-    
+
     tamagochi = Tamagochi()
-    
+
     if operacao == 1:
         while True:
             itemMenu = int(input(f"""
@@ -38,10 +37,7 @@ class Tamagochi():
                             99 - Resetar     
                                  
                                  """))
-            
-                            if tamagochi.morto == True:
-        print("ele morreu !!")       
-        break
-            
-            
-            
+
+            if tamagochi.morto == True:
+                print("ele morreu !!")
+                break
