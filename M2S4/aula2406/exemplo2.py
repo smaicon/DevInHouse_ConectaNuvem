@@ -6,7 +6,7 @@ class Pessoa:
     @classmethod
     def criarPeloAnoNascimento(cls, nome, nascimento):
     
-    def mostrar(self):
+     def mostrar(self):
         print(f'{self.nome} tem {self.idade} anos')
         
 
@@ -28,4 +28,3 @@ class Aluno(Pessoa):
 var1 = Aluno.criarPeloAnoNascimento('Davi', 2017)
 var1.mostrar()
 
-cont 37:00

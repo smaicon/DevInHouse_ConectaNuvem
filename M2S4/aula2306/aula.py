@@ -1,6 +1,6 @@
 class Pessoa():
-    def__init__(self, nome, idade) -> None:
-    self.idade = idade
+    def __init__(self, nome, idade) -> None:
+        self.idade = idade
     self.nome = nome
         
 #def __str__(self):
@@ -20,4 +20,4 @@ def printar2(cls, ):
 a = Pessoa('Matheus', 40)
 a.printar('nome')
     
-Pessoa.printar2('Matheus')
+Pessoa.printar2()
