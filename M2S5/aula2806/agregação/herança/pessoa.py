@@ -15,7 +15,8 @@ class Medico(Pessoa):
             
         def atender(self):
             print('f  {self.class.name} esta atendendo')
-
+        def falar(self)
+            print("medico tá malucooo")
 
 class Cliente(Pessoa):
     
@@ -37,5 +38,5 @@ class Aluno(Pessoa):
 
 if __name__ == '__main__':
     Medico(nome="Natan", idade=25).falar()
-    Cliente(nome="Natan", idade=25).falar()
-    Aluno(nome="Natan", idade=25).falar()
+    Cliente(nome="Natan", idade=25).comprar()
+    Aluno(nome="Natan", idade=25).dormir()
