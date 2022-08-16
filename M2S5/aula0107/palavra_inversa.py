@@ -23,3 +23,5 @@ def palavra(text):
 if __name__ == "__main__":
     print(palavra("alo"))
 
+
+#app2:30
