@@ -20,7 +20,8 @@ references locadora.filme(id_filme);
 select * from gestora_condominios.proprietario A
 inner join gestora_condominios.pessoa B on A.cpf = B.cpf ;
 
--- consulta de exemplo inner join
+-- consulta de exemplo inner join - Combina registros de duas tabelas sempre que houver valores correspondentes
+
 select B.nome,
 case when B.sexo = 'F' then 'Feminino'
       when B.sexo = 'M' then 'Masculino'
@@ -33,7 +34,16 @@ case when B.sexo = 'F' then 'Feminino'
  from gestora_condominios.proprietario A
 inner join gestora_condominios.pessoa B on A.cpf = B.cpf ;
 
--- exemplo left join
+-- exemplo left join (esquerda)
 
 select * from gestora_condominios.proprietario A
 left join gestora_condominios.pessoa B on A.cpf = B.cpf ;
+-- exemplo right join (esquerda)
+
+select * from gestora_condominios.proprietario A
+right join gestora_condominios.pessoa B on A.cpf = B.cpf ;
+
+--  // full outer join é pouco utilizado normalmente 
+-- este retorna todos os registros de ambas as tabelas.
+select * from gestora_condominios.proprietario A
+full outer  join gestora_condominios.pessoa B on A.cpf = B.cpf ;

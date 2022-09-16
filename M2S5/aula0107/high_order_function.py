@@ -8,3 +8,4 @@ def soma(x,y):
 if __name__ == "__main__":
     x = validar(soma)
     print(x(1,2))
+    
